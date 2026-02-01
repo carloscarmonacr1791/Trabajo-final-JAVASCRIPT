@@ -1,0 +1,17 @@
+[
+    {
+        "titulo": "Nuevo proyecto lanzado",
+        "descripcion": "Hemos lanzado una nueva web corporativa usando HTML5 y CSS3.",
+        "fecha": "10/01/2026"
+    },
+    {
+        "titulo": "Actualización de servicios",
+        "descripcion": "Ahora ofrecemos desarrollo con JavaScript avanzado.",
+        "fecha": "15/01/2026"
+    },
+    {
+        "titulo": "WebDev Studio crece",
+        "descripcion": "Nuestro equipo sigue creciendo este año.",
+        "fecha": "20/01/2026"
+    }
+]

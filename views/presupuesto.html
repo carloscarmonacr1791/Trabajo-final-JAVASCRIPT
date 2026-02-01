@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Presupuesto | WebDev Studio</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+     <!-- Font Awesome para iconos de redes sociales -->
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      referrerpolicy="no-referrer">
+
+<body>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="../index.html">WebDev Studio</a>
+        </div>
+        <nav>
+            <a href="../index.html" class="nav-link">Inicio</a>
+            <a href="../views/galeria.html" class="nav-link">Galería</a>
+            <a href="../views/presupuesto.html" class="nav-link">Presupuesto</a>
+            <a href="../views/contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </div>
+</header>
+<main> 
+
+<section>
+    <h2>Formulario de presupuesto</h2>
+    <form id="form-presupuesto">
+
+        <!-- DATOS DE CONTACTO -->
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" maxlength="15" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" maxlength="40" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" maxlength="9" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required>
+        </fieldset>
+
+        <!-- PRESUPUESTO -->
+        <fieldset>
+            <legend>Presupuesto</legend>
+
+            <label for="producto">Producto:</label>
+            <select id="producto">
+                <option value="50">Producto A - 50€</option>
+                <option value="80">Producto B - 80€</option>
+                <option value="120">Producto C - 120€</option>
+            </select>
+
+            <label for="plazo">Plazo (meses):</label>
+            <input type="number" id="plazo" min="1" value="1">
+
+            <p>Extras:</p>
+            <label><input type="checkbox" class="extra" value="10"> Extra 1 - 10€</label>
+            <label><input type="checkbox" class="extra" value="15"> Extra 2 - 15€</label>
+            <label><input type="checkbox" class="extra" value="20"> Extra 3 - 20€</label>
+
+            <label for="presupuesto-final">Presupuesto final (€):</label>
+            <input type="text" id="presupuesto-final" readonly>
+        </fieldset>
+
+        <!-- CONDICIONES -->
+        <fieldset>
+            <label><input type="checkbox" id="condiciones" required> Acepto las condiciones de privacidad</label>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </fieldset>
+
+    </form>
+</section>
+<script src="js/presupuesto.js"></script>
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>WebDev Studio</strong></p>
+            <p>Calle Mayor 1, 28013 Madrid, España</p>
+            <p>Tel: +34 912 345 678</p>
+        </div>
+        <div class="footer-redes">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-legal">
+        <p>© 2026 WebDev Studio. Todos los derechos reservados. <a href="#">Aviso legal</a></p>
+    </div>
+</footer>
+</body>
+</html>

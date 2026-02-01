@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | WebDev Studio</title>
+
+    <link rel="stylesheet" href="../css/estilos.css">
+     <!-- Font Awesome para iconos de redes sociales -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      referrerpolicy="no-referrer">
+
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Leaflet Routing Machine CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+    
+</head>
+<body>
+<!-- ===================== HEADER / NAV ===================== -->
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <a href="../index.html">WebDev Studio</a>
+        </div>
+        <nav>
+            <a href="../index.html" class="nav-link">Inicio</a>
+            <a href="../views/galeria.html" class="nav-link">Galería</a>
+            <a href="../views/presupuesto.html" class="nav-link">Presupuesto</a>
+            <a href="../views/contacto.html" class="nav-link">Contacto</a>
+        </nav>
+    </div>
+</header>
+<main> 
+<section class="contacto-info">
+    <h2>Datos de contacto</h2>
+    <p><strong>Dirección:</strong> Calle Mayor 1, 28013 Madrid, España</p>
+    <p><strong>Teléfono:</strong> +34 912 345 678</p>
+    <p><strong>Email:</strong> <a href="mailto:contacto@webdevstudio.com">contacto@webdevstudio.com</a></p>
+</section>
+
+<div id="mapa"></div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+<script src="../js/contacto.js"></script>
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p><strong>WebDev Studio</strong></p>
+            <p>Calle Mayor 1, 28013 Madrid, España</p>
+            <p>Tel: +34 912 345 678</p>
+        </div>
+        <div class="footer-redes">
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-legal">
+        <p>© 2026 WebDev Studio. Todos los derechos reservados. <a href="#">Aviso legal</a></p>
+    </div>
+</footer>
+</body>
+</html>
